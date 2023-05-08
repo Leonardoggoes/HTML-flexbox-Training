@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Flexbox HTML</title>
   </head>
@@ -60,52 +66,54 @@
     </section>
 
     <section class="products" id="products">
-      <div class="product">
+      <div class="product" id="productPurple">
         <h1>Purple</h1>
         <img src="./assets/produtos1.jpg" alt="product-purple" />
       </div>
-      <div class="product">
+      <div class="product" id="productPink">
         <h1>Pink</h1>
         <img src="./assets/produtos2.jpg" alt="product-pink" />
       </div>
-      <div class="product">
+      <div class="product" id="productBlue">
         <h1>Blue</h1>
         <img src="./assets/produtos3.jpg" alt="product-blue" />
       </div>
     </section>
 
-    <section class="price" id="price">
-      <div class="price-info">
-        <h1>Cobre</h1>
-        <h1>R$19</h1>
-        <p>Planos Ilimitados</p>
-        <p>Acesso Restrito</p>
-        <p>Conteúdo Secreto</p>
-        <p>Suporte 24h</p>
-        <button>COMPRAR</button>
-      </div>
-      <div class="price-info">
-        <h1>Prata</h1>
-        <h1>R$39</h1>
-        <p>Planos Ilimitados</p>
-        <p>Acesso Restrito</p>
-        <p>Conteúdo Secreto</p>
-        <p>Suporte 24h</p>
-        <p>Compra Exclusiva</p>
-        <button>COMPRAR</button>
-      </div>
-      <div class="price-info">
-        <h1>Ouro</h1>
-        <h1>R$79</h1>
-        <p>Planos Ilimitados</p>
-        <p>Acesso Restrito</p>
-        <p>Conteúdo Secreto</p>
-        <p>Suporte 24h</p>
-        <p>Compra Exclusiva</p>
-        <p>Download dos Itens</p>
-        <button>COMPRAR</button>
-      </div>
-    </section>
+    <div class="priceBg">
+      <section class="price" id="price">
+        <div class="price-info">
+          <h1>Cobre</h1>
+          <h2>R$19</h2>
+          <p>Planos Ilimitados</p>
+          <p>Acesso Restrito</p>
+          <p>Conteúdo Secreto</p>
+          <p>Suporte 24h</p>
+          <button>COMPRAR</button>
+        </div>
+        <div class="price-info">
+          <h1>Prata</h1>
+          <h2>R$39</h2>
+          <p>Planos Ilimitados</p>
+          <p>Acesso Restrito</p>
+          <p>Conteúdo Secreto</p>
+          <p>Suporte 24h</p>
+          <p>Compra Exclusiva</p>
+          <button>COMPRAR</button>
+        </div>
+        <div class="price-info">
+          <h1>Ouro</h1>
+          <h2>R$79</h2>
+          <p>Planos Ilimitados</p>
+          <p>Acesso Restrito</p>
+          <p>Conteúdo Secreto</p>
+          <p>Suporte 24h</p>
+          <p>Compra Exclusiva</p>
+          <p>Download dos Itens</p>
+          <button>COMPRAR</button>
+        </div>
+      </section>
+    </div>
 
     <section class="quality" id="quality">
       <div class="quality-item">
@@ -152,17 +160,20 @@
       </div>
     </section>
 
-    <section class="newsletter">
-      <div>
-        <h1>NewsLetter</h1>
-      </div>
-      <div>
-        <input type="text" name="email" id="email" />
-        <button>ASSINAR</button>
-      </div>
-    </section>
+    <div class="newsLetter-bg">
+      <section class="newsletter">
+        <div class="newsletter-info">
+          <h1>Newsletter</h1>
+          <p>assine e fique por dentro das novidades</p>
+        </div>
+        <form class="newsletter-form">
+          <input type="text" placeholder="Seu e-mail" />
+          <button type="submit">ASSINAR</button>
+        </form>
+      </section>
+    </div>
 
-    <footer>
+    <footer class="footer">
       <h1>FlexBlog © Todos os direitos reservados.</h1>
     </footer>
   </body>

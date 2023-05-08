@@ -1,11 +1,8 @@
 * {
   padding: 0px;
-  margin: 0px;
+  margin: 0px auto;
   box-sizing: border-box;
-}
-
-body {
-  color: #464851;
+  font-family: "Poppins", sans-serif;
 }
 
 ul {
@@ -21,7 +18,12 @@ img {
   max-width: 100%;
 }
 button {
-  display: none;
+  display: block;
+  text-decoration: none;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
 }
 
 .info-sup-bg {
@@ -30,8 +32,8 @@ button {
 
 .info-sup {
   display: flex;
+  max-width: 75%;
   height: 30px;
-  max-width: 960px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -50,7 +52,7 @@ button {
 .menu {
   display: flex;
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 100%;
   height: 80px;
   justify-content: space-between;
   align-items: center;
@@ -77,7 +79,7 @@ button {
 
 .intro {
   margin: 100px auto;
-  max-width: 960px;
+  max-width: 75%;
   height: 80px;
   font-size: 45px;
   color: black;
@@ -90,7 +92,7 @@ button {
   border-bottom: solid 2px blue;
   margin: 0 auto;
   padding: 70px 0px;
-  max-width: 960px;
+  max-width: 75%;
   flex-wrap: wrap;
 }
 
@@ -114,4 +116,203 @@ button {
 .about-img {
   padding: 10px;
   flex: 1 1 160px;
+}
+
+.products {
+  display: flex;
+  padding: 70px 0px;
+  margin: 0 auto;
+  max-width: 75%;
+  flex-flow: row wrap;
+  align-items: flex-end;
+}
+
+.product {
+  flex: 1 1 200px;
+  margin: 10px;
+  background-color: rgb(236, 236, 236);
+}
+
+.product h1 {
+  padding: 60px 20px;
+  font-size: 3em;
+  color: #a4a4a4;
+}
+
+#productPurple {
+  border-top: 8px solid purple;
+}
+#productPink {
+  border-top: 8px solid #f9265e;
+}
+#productBlue {
+  border-top: 8px solid blue;
+}
+
+.priceBg {
+  background: rgb(238, 238, 238);
+}
+
+.price {
+  display: flex;
+  margin: 0px auto;
+  padding: 50px 0px;
+  max-width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.price-info {
+  flex: 1;
+  border: 4px solid white;
+  padding: 20px;
+  margin: 40px;
+  max-width: 350px;
+}
+
+.price-info h1 {
+  font-size: 45px;
+  color: #a4a4a4;
+  text-align: center;
+}
+
+.price-info h2 {
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  font-size: 45px;
+  color: black;
+  text-align: center;
+}
+
+.price-info p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 25px;
+  font-size: 1.25em;
+  line-height: 1;
+}
+
+.price-info button {
+  font-size: 40px;
+  padding: 10px 30px;
+  border: 2px solid black;
+}
+
+.price-info p::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.quality {
+  display: flex;
+  padding: 70px 0px;
+  margin: 0 auto;
+  max-width: 75%;
+  flex-flow: row wrap;
+}
+
+.quality-item {
+  flex: 1 1 300px;
+  margin: 20px auto;
+}
+
+.quality-item h1 {
+  color: gray;
+  font-size: 2.25em;
+}
+
+.quality-item h1::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.quality-item:nth-of-type(3n + 2) h1::before {
+  background-color: #f9265e;
+}
+
+.quality-item:nth-of-type(3n + 1) h1::before {
+  background-color: purple;
+}
+
+.quality-item:nth-of-type(3n + 3) h1::before {
+  background-color: blue;
+}
+
+.quality-item p {
+  font-size: 1.25em;
+  line-height: 1.4;
+  color: #7c7c7c;
+}
+
+.newsLetter-bg {
+  background: #f7f7f7;
+  padding: 60px 0px;
+}
+.newsletter {
+  max-width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-info {
+  flex: 1 1 200px;
+}
+
+.newsletter-info h1 {
+  font-size: 3em;
+  color: #a4a4a4;
+}
+
+.newsletter-info p {
+  font-size: 1.25em;
+  color: #7c7c7c;
+  margin-bottom: 10px;
+}
+
+.newsletter-form {
+  flex: 2 1 160px;
+  margin: 0 10px;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  flex: 3 1 260px;
+  font-size: 1.25em;
+  color: #7c7c7c;
+  border: 4px solid #2c70ff;
+  background: transparent;
+  padding: 15px 10px;
+}
+
+.newsletter-form button {
+  flex: 1 1 160px;
+  font-size: 2.25em;
+  background: #2c70ff;
+  color: white;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  background: #2c70ff;
+  height: 200px;
+  align-items: center;
+}
+
+.footer h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 2.25em;
+  color: #122ab2;
 }
