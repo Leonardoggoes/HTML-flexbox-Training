@@ -1,0 +1,120 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  color: #464851;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+button {
+  display: none;
+}
+
+.info-sup-bg {
+  background-color: #3c75e1;
+}
+
+.info-sup {
+  display: flex;
+  height: 30px;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.info-sup a {
+  color: white;
+}
+
+.menu-bg {
+  background-color: #6b96e8;
+}
+
+.menu {
+  display: flex;
+  margin: 0 auto;
+  max-width: 960px;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+}
+.menu a {
+  color: white;
+  font-size: 20px;
+}
+
+.menu-logo a {
+  margin: auto 10px;
+  font-size: 50px;
+}
+
+.menu-nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu-nav a {
+  padding: 20px;
+}
+
+.intro {
+  margin: 100px auto;
+  max-width: 960px;
+  height: 80px;
+  font-size: 45px;
+  color: black;
+  line-height: 1;
+}
+
+.about {
+  display: flex;
+  border-top: solid 2px blue;
+  border-bottom: solid 2px blue;
+  margin: 0 auto;
+  padding: 70px 0px;
+  max-width: 960px;
+  flex-wrap: wrap;
+}
+
+.about-txt {
+  color: black;
+  margin: 10px 0px;
+  flex: 2 1 300px;
+}
+
+.about-txt h1 {
+  font-size: 3em;
+  margin-top: 0.5em;
+}
+
+.about-txt p {
+  font-size: 1.25em;
+  margin-top: 30px;
+  line-height: 1.4;
+}
+
+.about-img {
+  padding: 10px;
+  flex: 1 1 160px;
+}
+
+.price {
+}
