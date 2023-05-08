@@ -318,8 +318,8 @@ button:hover {
 }
 
 @media (max-width: 766px) {
-  .newsletter-form {
-    font-size: 1em;
+  .newsletter-form button {
+    font-size: 20px;
   }
 
   .menu-nav {
@@ -331,5 +331,11 @@ button:hover {
   }
   .intro {
     font-size: 30px;
+  }
+  .price-info button {
+    font-size: 20px;
+  }
+  .newsletter-form input {
+    font-size: 20px;
   }
 }
