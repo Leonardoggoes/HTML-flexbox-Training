@@ -253,6 +253,7 @@ button:hover {
 }
 
 .newsLetter-bg {
+  max-width: 100%;
   background: #f7f7f7;
   padding: 60px 0px;
 }
@@ -332,13 +333,7 @@ button:hover {
   .price-info button {
     font-size: 20px;
   }
-
-  .newsletter-form input {
-    font-size: 20px;
-    max-width: 100%;
-  }
-  .newsletter-form button {
-    font-size: 20px;
-    max-width: 100%;
+  .newsletter {
+    font-size: 10px;
   }
 }
