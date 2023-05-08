@@ -335,10 +335,10 @@ button:hover {
 
   .newsletter-form input {
     font-size: 20px;
-    max-width: 200px;
+    max-width: 100%;
   }
   .newsletter-form button {
     font-size: 20px;
-    max-width: 200px;
+    max-width: 100%;
   }
 }
